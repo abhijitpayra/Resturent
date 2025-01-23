@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-white p-3" style="background-color: #754E1A;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Restaurant Bliss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero text-center text-white py-5" style="background-color: #CBA35C;">
+        <div class="container">
+            <h1>Welcome to Restaurant Bliss</h1>
+            <p>Indulge in delicious cuisine and exceptional service.</p>
+            <a href="#menu" class="btn btn-light btn-lg">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu py-5" style="background-color: #F8E1B7;">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Assets/Images/20230406-0623-EXTRA-27432_RET.webp" class="card-img-top" alt="Dish 1">
+                        <div class="card-body" style="background-color: #B6CBBD;">
+                            <h5 class="card-title">Grilled Salmon</h5>
+                            <p class="card-text">$25</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Assets/Images/vegan-pasta-primavera-23-sq.webp" class="card-img-top" alt="Dish 2">
+                        <div class="card-body" style="background-color: #B6CBBD;">
+                            <h5 class="card-title">Pasta Primavera</h5>
+                            <p class="card-text">$18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Assets/Images/Smashburger-recipe-120219.webp" class="card-img-top" alt="Dish 3">
+                        <div class="card-body" style="background-color: #B6CBBD;">
+                            <h5 class="card-title">Classic Cheeseburger</h5>
+                            <p class="card-text">$15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about py-5" style="background-color: #F5ECD5;">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>At Restaurant Bliss, we are committed to serving high-quality dishes crafted with the freshest ingredients. Our team strives to create an unforgettable dining experience for every guest.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5" style="background-color: #F8E1B7;">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required style="background-color: #F5ECD5;">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required style="background-color: #F5ECD5;">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" required style="background-color: #F5ECD5;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Restaurant Bliss. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
